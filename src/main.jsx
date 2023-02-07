@@ -4,9 +4,9 @@ import App from "./App";
 import "./index.css";
 
 /**
+ * The root element of the React application, obtained by `document.getElementById("root")`.
+ * It should be a valid HTML element.
  * @param {HTMLElement} rootElement
- *   The root element of the React application, obtained by `document.getElementById("root")`.
- *   It should be a valid HTML element.
  */
 const rootElement = document.getElementById("root");
 if (rootElement) {
