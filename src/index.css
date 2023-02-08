@@ -5,7 +5,7 @@
 @font-face {
   font-family: "DocumanHeavy";
   src: local("DocumanHeavy"),
-    url("./fonts/Documan-Heavy.otf") format("truetype");
+    url("./fonts/Documan-Heavy.otf") format("opentype");
 }
 
 /*COLORS
