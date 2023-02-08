@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "DocumanHeavy";
+  src: local("DocumanHeavy"),
+    url("./fonts/Documan-Heavy.otf") format("truetype");
+}
