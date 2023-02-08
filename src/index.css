@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "DocumanHeavy";
+  src: local("DocumanHeavy"),
+    url("./fonts/Documan-Heavy.otf") format("truetype");
+}
+
 /*COLORS
 Lila [PRIMARY]: #451499
 Ljuslila [SECONDARY]: #c8b2ff
@@ -23,8 +29,18 @@ ex. color: var(--primary-color)
   --accent-color: #f7528b;
 }
 
-@font-face {
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "DocumanHeavy";
-  src: local("DocumanHeavy"),
-    url("./fonts/Documan-Heavy.otf") format("truetype");
 }
