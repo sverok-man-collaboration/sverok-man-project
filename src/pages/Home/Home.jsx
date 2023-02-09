@@ -1,5 +1,5 @@
 import React from "react";
-import AboutLink from "./AboutLink";
+import AboutLink from "./components/AboutLink";
 
 function Home() {
   return (
