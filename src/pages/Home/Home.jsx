@@ -1,11 +1,15 @@
 import React from "react";
 import AboutLink from "./components/AboutLink";
+import { Helmet } from "react-helmet-async";
 
 function Home() {
   return (
-    <div>
+    <>
+      <Helmet>
+        <title>Beskrivande text</title>
+      </Helmet>
       <AboutLink />
-    </div>
+    </>
   );
 }
 
