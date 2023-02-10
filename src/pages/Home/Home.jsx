@@ -1,6 +1,7 @@
 import React from "react";
-import AboutLink from "./components/AboutLink";
 import { Helmet } from "react-helmet-async";
+import OrganizationInfo from "../../components/OrganizationInfo";
+import AboutLink from "./components/AboutLink";
 
 function Home() {
   return (
@@ -8,6 +9,7 @@ function Home() {
       <Helmet>
         <title>Beskrivande text</title>
       </Helmet>
+      <OrganizationInfo />
       <AboutLink />
     </>
   );
