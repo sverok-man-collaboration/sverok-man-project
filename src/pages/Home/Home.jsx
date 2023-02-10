@@ -1,6 +1,15 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
+
 function Home() {
-  return <div>Home</div>;
+  return (
+    <>
+      <Helmet>
+        <title>Beskrivande text</title>
+      </Helmet>
+      <div>Hem</div>
+    </>
+  );
 }
 
 export default Home;
