@@ -11,6 +11,8 @@ import RoomOne from "./pages/RoomOne/RoomOne";
 import RoomTwo from "./pages/RoomTwo/RoomTwo";
 import RoomThree from "./pages/RoomThree/RoomThree";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
+//React-helmet-async
+import { HelmetProvider } from "react-helmet-async";
 
 const router = createBrowserRouter(
   /**
@@ -62,9 +64,11 @@ const routerProviderProps = {
 const rootElement = document.getElementById("root");
 if (rootElement) {
   ReactDOM.createRoot(rootElement).render(
-    <RouterProvider {...routerProviderProps}>
-      <App />
-    </RouterProvider>
+    <HelmetProvider>
+      <RouterProvider {...routerProviderProps}>
+        <App />
+      </RouterProvider>
+    </HelmetProvider>
   );
 } else {
   throw new Error("Root element with id 'root' not found in the DOM");
