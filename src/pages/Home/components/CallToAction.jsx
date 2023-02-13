@@ -6,7 +6,7 @@ function CallToAction() {
     <>
       <div className="flex justify-center">
         <img src="" alt="Logotyp" />
-        <h1>Namn på spelet</h1>
+        <h1 className="text-xl">Namn på spelet</h1>
       </div>
       <DownloadGame />
     </>
