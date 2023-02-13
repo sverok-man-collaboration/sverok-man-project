@@ -1,6 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 
+import RoomNav from "../../components/RoomNav";
+
 function RoomThree() {
   return (
     <>
@@ -8,6 +10,7 @@ function RoomThree() {
         <title>Beskrivande text</title>
       </Helmet>
       <div>Rum 3</div>
+      <RoomNav />
     </>
   );
 }
