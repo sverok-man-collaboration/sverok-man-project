@@ -23,7 +23,7 @@ function EnterRoom() {
   }, []);
 
   if (loading) {
-    return;
+    return <div>Loading...</div>;
   }
 
   return (
