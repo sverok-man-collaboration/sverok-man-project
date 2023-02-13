@@ -1,5 +1,5 @@
 import React from "react";
-import { BsDownload } from "react-icons/Bs";
+import { BsDownload } from "react-icons/bs";
 
 function DownloadGame() {
   return (
