@@ -1,30 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 
 function EnterRoom() {
-  const [loading, setLoading] = useState(true);
-  const [rooms, setRooms] = useState([
+  const rooms = [
     { name: "Room One", path: "/roomone" },
     { name: "Room Two", path: "/roomtwo" },
     { name: "Room Three", path: "/roomthree" },
-  ]);
-
-  function randomizeRooms(rooms) {
-    for (let i = rooms.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [rooms[i], rooms[j]] = [rooms[j], rooms[i]];
-    }
-    setRooms(rooms);
-    setLoading(false);
-  }
-
-  useEffect(() => {
-    randomizeRooms(rooms);
-  }, []);
-
-  if (loading) {
-    return <div>Loading...</div>;
-  }
+  ];
 
   return (
     <div>
