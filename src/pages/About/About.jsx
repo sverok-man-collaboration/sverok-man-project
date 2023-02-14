@@ -2,6 +2,8 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import { useNavigate } from "react-router-dom";
 
+import { BsChevronLeft } from "react-icons/bs";
+
 function About() {
   const navigate = useNavigate();
 
@@ -14,9 +16,9 @@ function About() {
         onClick={() => {
           navigate(-1);
         }}
-        className="rounded-full text-accent bg-primary hover:bg-secondary hover:text-primary p-4 m-4 w-40"
+        className="rounded-full text-accent bg-primary hover:bg-secondary hover:text-primary px-6 py-2 m-4 flex items-center justify-center"
       >
-        Back
+        <BsChevronLeft className="mr-2" /> Back
       </button>
       <div>Om</div>
     </>
