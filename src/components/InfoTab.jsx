@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { easeInOut, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 import { BsChevronUp, BsChevronDown, BsHash } from "react-icons/bs";
 
